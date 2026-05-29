@@ -1,2 +1,4 @@
 # PracticalExercises-BrightLearn
 Practical exercises from BrightLearn, one using Google BigQuery and the other using Snowflake.
+
+To run SQL queries on Google BigQuery, I first accessed the Google Cloud Console and used the BigQuery Sandbox (free tier). My table was stored in a path like `project.dataset.table`, and I wrote queries in the BigQuery editor. The main trick was using backticks around column names that contain spaces (e.g., `Total Amount`) and converting string columns to numbers with SAFE_CAST when needed. For Snowflake, I logged into the Snowflake web UI, created a database and schema, and wrote queries in a worksheet. Snowflake uses double quotes for column names with spaces (e.g., "Total Amount") and supports TRY_CAST for safe type conversion. Both platforms follow standard SQL, but the quoting style for identifiers and the table path format are the key differences I had to remember.
